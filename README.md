@@ -10,6 +10,16 @@ This repository contains the MATLAB code accompanying the paper
 
 The purpose of this repository is to provide a simple numerical example illustrating **Theorem 1**. The example was prepared to complement the theoretical development in the paper, as some readers and reviewers found the theorem difficult to follow from the mathematical derivation alone.
 
+## Example Description
+
+The example considers a linear system whose **disturbance relative vector degree** is
+
+\[
+\{2,\,4,\,3\}.
+\]
+
+The two MATLAB scripts verify Theorem 1 using two different formulations.
+
 ## Repository Structure
 
 - **`noP.m`**
