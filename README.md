@@ -12,11 +12,8 @@ The purpose of this repository is to provide a simple numerical example illustra
 
 ## Example Description
 
-The example considers a linear system whose **disturbance relative vector degree** is
+The example considers a linear system whose **disturbance relative vector degree** is \{2,4,3\}.
 
-\[
-\{2,\,4,\,3\}.
-\]
 
 The two MATLAB scripts verify Theorem 1 using two different formulations.
 
