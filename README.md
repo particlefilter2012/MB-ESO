@@ -21,26 +21,26 @@ The two MATLAB scripts verify Theorem 1 using two different formulations.
 
 - **`noP.m`**
   
-  Verifies the example **without** using the output transformation matrix \(P\). This script demonstrates the observer design and verifies the conditions directly in the original output coordinates.
+  Attempts to construct the observer **without** using the output transformation matrix \(P\). This script shows that the observer gain \(L\) cannot be obtained in the original output coordinates.
 
 - **`withP.m`**
   
-  Verifies the same example **using** the output transformation matrix \(P\). This script illustrates how the proposed output transformation simplifies the design procedure and validates the results presented in Theorem 1.
+  Constructs the observer **using** the output transformation matrix \(P\). This script shows that the transformation matrix \(P\) enables the computation of the observer gain \(L\), thereby validating the design procedure and the theoretical results of **Theorem 1**.
 
 ## Purpose
 
-The two scripts solve the same problem using different formulations:
+The two MATLAB scripts use the same system to demonstrate the following two cases:
 
 | Script | Output Transformation Matrix \(P\) | Purpose |
 |---------|------------------------------------|---------|
-| `noP.m` | No | Verification in the original output coordinates |
-| `withP.m` | Yes | Verification after applying the output transformation |
+| `noP.m` | No | Demonstrates that the observer gain \(L\) cannot be computed directly in the original output coordinates. |
+| `withP.m` | Yes | Demonstrates that introducing the output transformation matrix \(P\) enables the computation of the observer gain \(L\) and verifies the design procedure in Theorem 1. |
 
 By comparing the two implementations, readers can better understand the role of the output transformation matrix in the proof and implementation of **Theorem 1**.
 
 ## Requirements
 
-The code was developed and tested in MATLAB. No additional toolboxes are required unless otherwise specified in the scripts.
+The code was developed and tested in MATLAB and requires only the Symbolic Math Toolbox.
 
 ## Running the Example
 
